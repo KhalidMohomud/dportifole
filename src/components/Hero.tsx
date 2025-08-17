@@ -10,8 +10,8 @@ export const Hero = () => {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
-      <div className="floating-shapes absolute inset-0 z-0">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-7 sm:px-6 lg:px-8">
+      <div className="floating-shapes absolute m-3 inset-0 z-0">
         <div className="shape"></div>
         <div className="shape"></div>
         <div className="shape"></div>
@@ -21,9 +21,9 @@ export const Hero = () => {
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between w-full max-w-7xl">
         {/* Left Content */}
         <div className="text-center lg:text-left lg:w-1/2 space-y-8 animate-fade-in">
-          <div className="w-40 h-40 mx-auto lg:mx-0 bg-gradient-to-r from-primary via-accent to-secondary rounded-full flex items-center justify-center animate-float shadow-2xl">
+          {/* <div className="w-40 h-40 mx-auto lg:mx-0 bg-gradient-to-r from-primary via-accent to-secondary rounded-full flex items-center justify-center animate-float shadow-2xl absolute top-7xl ">
             <FaBolt className="text-white text-6xl animate-pulse-slow" />
-          </div>
+          </div> */}
 
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             <span className="text-gray-800 dark:text-gray-200">Smart</span>
