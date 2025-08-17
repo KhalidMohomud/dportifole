@@ -1,4 +1,4 @@
-import { FaArrowRight, FaRocket, FaBolt } from 'react-icons/fa'
+import { FaArrowRight, FaRocket } from 'react-icons/fa'
 import yourImage from '../assets/payment.png' 
 
 export const Hero = () => {
