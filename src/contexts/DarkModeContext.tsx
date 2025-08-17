@@ -1,46 +1,47 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import { createContext, useContext, useState, useEffect } from 'react';
+import type { ReactNode } from 'react';
 
 interface DarkModeContextType {
-  isDarkMode: boolean
-  toggleDarkMode: () => void
+  isDarkMode: boolean;
+  toggleDarkMode: () => void;
 }
 
-const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined)
+const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined);
 
 export const useDarkMode = () => {
-  const context = useContext(DarkModeContext)
+  const context = useContext(DarkModeContext);
   if (context === undefined) {
-    throw new Error('useDarkMode must be used within a DarkModeProvider')
+    throw new Error('useDarkMode must be used within a DarkModeProvider');
   }
-  return context
-}
+  return context;
+};
 
 interface DarkModeProviderProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 export const DarkModeProvider = ({ children }: DarkModeProviderProps) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode')
-    return saved ? JSON.parse(saved) : false
-  })
+    const saved = localStorage.getItem('darkMode');
+    return saved ? JSON.parse(saved) : false;
+  });
 
   useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(isDarkMode))
+    localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
     if (isDarkMode) {
-      document.documentElement.classList.add('dark')
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark')
+      document.documentElement.classList.remove('dark');
     }
-  }, [isDarkMode])
+  }, [isDarkMode]);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode)
-  }
+    setIsDarkMode(!isDarkMode);
+  };
 
   return (
     <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
       {children}
     </DarkModeContext.Provider>
-  )
-}
+  );
+};
