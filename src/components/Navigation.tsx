@@ -105,7 +105,7 @@ export const Navigation = () => {
         isMobileMenuOpen ? 'block' : 'hidden'
       }`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
-          {['home', 'about', 'services', 'stats', 'contact'].map(section => (
+          {['home', 'about', 'stats', 'contact'].map(section => (
             <button
               key={section}
               onClick={() => scrollToSection(section)}
