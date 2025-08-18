@@ -28,12 +28,12 @@ export const About = () => {
           {/* Left Side */}
           <div className="animate-slide-up">
             <h3 className="text-4xl font-bold text-primary mb-8">Our Mission</h3>
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              To democratize access to power through innovative technology, creating a world where 
-              <span className="font-semibold"> no one is ever left without power</span>. We combine 
-              cutting-edge IoT technology with sustainable energy practices to deliver reliable 
-              power solutions that meet the demands of modern society.
-            </p>
+         <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+  We democratize access to power through innovative technology, creating a world where  
+  <span className="font-semibold">no one is ever left powerless</span>. By combining cutting-edge IoT technology with sustainable energy practices,  
+  we deliver reliable and accessible power solutions tailored for modern lifestyles.
+</p>
+
 
             <div className="space-y-6">
               {/* Feature 1 */}
