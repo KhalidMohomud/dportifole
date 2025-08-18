@@ -34,7 +34,7 @@ export const Hero = () => {
 
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed">
            We rent power banks to keep your phone charged at restaurants, cafes, and more.Many people forget their phone batteries run low—stay powered without worry.
-   <span className="font-semibold text-primary"> Power Bank Rental System</span>Enjoy your time out while we take care of your charging needs.
+   <span className="font-semibold text-primary"> Power Bank Rental System</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center">
