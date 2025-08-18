@@ -16,11 +16,12 @@ export const About = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20 animate-slide-up">
           <h2 className="text-5xl font-bold text-gray-800 dark:text-gray-200 mb-6">About Danab Power</h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            We are a cutting-edge technology company revolutionizing the power industry with our 
-            <span className="font-semibold text-primary"> innovative Power Bank Rental System</span>. 
-            Our mission is to provide sustainable, efficient, and accessible power solutions for everyone.
-          </p>
+        <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+  We are a cutting-edge technology company transforming the power industry with our 
+  <span className="font-semibold text-primary">innovative Power Bank Rental System</span>.  
+  Our mission is to deliver sustainable, efficient, and accessible power solutions for all.
+</p>
+
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
